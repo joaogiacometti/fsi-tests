@@ -1,7 +1,7 @@
 from enum import Enum
 
 class Operation(Enum):
-    SUM = "sum"
+    ADD = "add"
     SUBTRACT = "subtract"
     MULTIPLY = "multiply"
     DIVIDE = "divide"
@@ -11,8 +11,8 @@ class Operation(Enum):
     DIVIDE_SYMBOL = "/"
 
 def perform_operation(a, b, operation):
-    if operation == Operation.SUM.value or operation == Operation.ADD_SYMBOL.value:
-        return sum(a, b)
+    if operation == Operation.ADD.value or operation == Operation.ADD_SYMBOL.value:
+        return add(a, b)
     elif operation == Operation.SUBTRACT.value or operation == Operation.SUBTRACT_SYMBOL.value:
         return subtract(a, b)
     elif operation == Operation.MULTIPLY.value or operation == Operation.MULTIPLY_SYMBOL.value:
@@ -23,16 +23,16 @@ def perform_operation(a, b, operation):
         raise ValueError(f"Invalid operation: {operation}. Please use one of {', '.join([op.value for op in Operation])}.")
 
 
-def sum(a, b):
-    return a + b;
+def add(a, b):
+    return a + b
 
 def subtract(a, b):
-    return a - b;
+    return a - b
 
 def multiply(a, b):
-    return a * b;
+    return a * b
 
 def divide(a, b):
     if b == 0:
-        raise ValueError("Division by zero is undefined.")
-    return a / b;
+        raise ZeroDivisionError("Division by zero is undefined.")
+    return a / b
