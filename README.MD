@@ -26,7 +26,7 @@ Os testes estão localizados na pasta test/.
 
 A integração com GitHub Actions foi configurada para rodar os testes automaticamente sempre que houver um push ou pull request. Você pode acompanhar o status dos testes no badge abaixo:
 
-![Testes Automatizados](https://github.com/sthefaniarcaro/fsi-tests/actions/workflows/python-app.yml/badge.svg)
+![Testes Automatizados](https://github.com/joaogiacometti/fsi-tests/actions/workflows/python-app.yml/badge.svg)
 
 Desenvolvido por:
 joaogiacometti e sthefaniarcaro
