@@ -29,5 +29,4 @@ A integração com GitHub Actions foi configurada para rodar os testes automatic
 ![Testes Automatizados](https://github.com/sthefaniarcaro/fsi-tests/actions/workflows/python-app.yml/badge.svg)
 
 Desenvolvido por:
-joaogiacometti
-sthefaniarcaro
+joaogiacometti e sthefaniarcaro
